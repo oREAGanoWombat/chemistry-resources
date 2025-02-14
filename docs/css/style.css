@@ -1,9 +1,9 @@
 :root {
-  --primary: #880D1E;
-  --secondary: #FF7F51;
-  --tertiary: #FF9B54;
-  --black: #050517;
-  --white: #F4F4F9;
+  --primary: #7D387D;
+  --secondary: #C45BAA;
+  --tertiary: #629460;
+  --black: #343633;
+  --white: #F9EBE0;
   --titles: "Impact", sans-serif;
 }
 
@@ -244,89 +244,42 @@ textarea {
 }
 
 .navbar {
-  background-color: var(--primary);
+  background-color: var(--tertiary);
   color: var(--white);
   display: flex;
-  border: 0.5rem solid var(--primary);
+  flex-direction: row;
+  align-items: center;
+  border: 0.5rem solid var(--tertiary);
   border-radius: 0.5rem;
-  font-family: var(--titles);
 }
 
 .nav-link {
-  font-size: 2rem;
   border: none;
   cursor: pointer;
-  justify-content: left;
-  font-family: var(--titles);
 }
 
-#navbutton-home {
-  background-color: var(--secondary);
-  border: 0.25rem solid var(--secondary);
+.nav-item #navbutton-home {
+  background-color: var(--primary);
+  border: 0.25rem solid var(--primary);
   border-radius: 0.5rem;
   font-size: 3rem;
   text-decoration: none;
-  color: var(--primary);
+  color: var(--secondary);
+  font-family: var(--titles);
+  font-variant: small-caps;
 }
 
 .nav-item {
   padding: 0.5rem;
-  float: left;
 }
 
-.dropbtn.class {
-  background-color: var(--tertiary);
-  color: var(--primary);
+.nav-item a {
+  background-color: var(--secondary);
+  border: 0.25rem solid var(--secondary);
+  border-radius: 0.5rem;
   font-size: 2rem;
-  padding: 0.5rem;
-  border: 0.25rem solid var(--primary);
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-family: var(--titles);
-}
-
-.dropdown-content {
-  display: none;
-  flex-direction: column;
-  text-align: center;
-}
-
-.dropbtn.topic {
-  background-color: var(--tertiary);
-  color: var(--primary);
-  font-size: 1.25rem;
-  padding: 0.5rem;
-  border: 0.25rem solid var(--primary);
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-family: var(--titles);
-}
-
-.dropdown-content a{
-  background-color: var(--tertiary);
-  color: var(--primary);
-  font-size: 1rem;
-  padding: 0.5rem;
-  border: 0.05rem solid var(--primary);
-  border-radius: 0.5rem;
-  cursor: pointer;
   text-decoration: none;
-}
-
-.dropdown-content a:hover {background-color: var(--white);}
-
-.dropdown.class:hover .dropdown-content.topic {
-  display: flex;
-}
-
-.dropdown.topic:hover .dropdown-content.page {
-  display: flex;
-}
-
-.dropdown.class:hover .dropbtn.class {
-  background-color: var(--white);
-}
-
-.dropdown.topic:hover .dropbtn.topic {
-  background-color: var(--white);
+  color: var(--primary);
+  font-family: var(--titles);
+  font-variant: small-caps;
 }
