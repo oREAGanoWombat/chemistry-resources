@@ -345,8 +345,32 @@ hr {
   color: var(--primary);
   padding-left: 1rem;
   text-decoration: underline;
+  margin-bottom: 0rem;
 }
 
 .content-container.middle {
   flex-grow: 4;
+}
+
+.quicklinks-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  justify-content: space-around;
+  padding-left: 1rem;
+}
+
+.quickLink {
+  color: var(--primary);
+  background-color: var(--tertiary);
+  margin: 0.5rem;
+  padding: 0.25rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: 0.1rem solid var(--tertiary);
+}
+
+.quickLink:hover {
+  background-color: var(--white);
 }
