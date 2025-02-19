@@ -253,6 +253,10 @@ hr {
   margin: auto;
 }
 
+h1 {
+  font-family: var(--titles);
+}
+
 .small-hr {
   border: none;
   border-top: 0.05vw dashed var(--tertiary);
