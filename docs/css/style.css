@@ -10,7 +10,7 @@
 html {
   background-color: var(--white);
   color: var(--black);
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   line-height: 1.4;
   font-family: "Optima",sans-serif;
 }
@@ -246,11 +246,18 @@ textarea {
 hr {
   display: block;
   border-style: solid;
-  border-width: 0.05rem;
+  border-width: 0.05vw;
   border-color: var(--black);
   background-color: var(--black);
   width: 80%;
   margin: auto;
+}
+
+.small-hr {
+  border: none;
+  border-top: 0.05vw dashed var(--tertiary);
+  background-color: var(--white);
+  width: 5%;
 }
 
 .navbar {
@@ -259,8 +266,8 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 0.5rem solid var(--tertiary);
-  border-radius: 0.5rem;
+  border: 0.5vw solid var(--tertiary);
+  border-radius: 0.5vw;
 }
 
 .nav-link {
@@ -270,24 +277,30 @@ hr {
 
 .nav-item #navbutton-home {
   background-color: var(--primary);
-  border: 0.25rem solid var(--primary);
-  border-radius: 0.5rem;
-  font-size: 3rem;
+  border: 0.25vw solid var(--primary);
+  border-radius: 0.5vw;
+  font-size: 3vw;
   text-decoration: none;
   color: var(--secondary);
   font-family: var(--titles);
   font-variant: small-caps;
 }
 
+.nav-item #navbutton-home:hover {
+  background-color: var(--secondary);
+  border: 0.25vw solid var(--secondary);
+  color: var(--primary);
+}
+
 .nav-item {
-  padding: 0.5rem;
+  padding: 0.5vw;
 }
 
 .nav-item a {
   background-color: var(--secondary);
-  border: 0.25rem solid var(--secondary);
-  border-radius: 0.5rem;
-  font-size: 2rem;
+  border: 0.25vw solid var(--secondary);
+  border-radius: 0.5vw;
+  font-size: 2vw;
   text-decoration: none;
   color: var(--primary);
   font-family: var(--titles);
@@ -295,13 +308,15 @@ hr {
 }
 
 .nav-item a:hover {
-  background-color: var(--white);
+  background-color: var(--primary);
+  border: 0.25vw solid var(--primary);
+  color: var(--secondary);
 }
 
 .page-title {
   font-family: var(--titles);
   text-align: center;
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
 #page-content{
@@ -313,8 +328,8 @@ hr {
   display: flex;
   flex-direction: column;
   background-color: var(--primary);
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
   color: var(--white);
 }
 
@@ -322,9 +337,9 @@ hr {
   color: var(--black);
   text-decoration: none;
   background-color: var(--secondary);
-  padding: 0.125rem;
-  margin-top: 0.25rem;
-  border-radius: 0.5rem;
+  padding: 0.125vw;
+  margin-top: 0.25vw;
+  border-radius: 0.5vw;
 }
 
 .side-navbar.left a:hover {
@@ -332,20 +347,20 @@ hr {
 }
 
 .topic {
-  margin-bottom: -0.25rem;
+  margin-bottom: -0.25vw;
   text-decoration: underline;
   font-family: var(--titles);
-  font-size: 1.25rem;
+  font-size: 1.25vw;
 }
 
 .content-title {
   font-family: var(--titles);
   text-align: left;
-  font-size: 2rem;
+  font-size: 2vw;
   color: var(--primary);
-  padding-left: 1rem;
+  padding-left: 1vw;
   text-decoration: underline;
-  margin-bottom: 0rem;
+  margin-bottom: 0vw;
 }
 
 .content-container.middle {
@@ -355,20 +370,20 @@ hr {
 .quicklinks-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5vw;
   justify-content: space-around;
-  padding-left: 1rem;
+  padding-left: 1vw;
 }
 
 .quickLink {
   color: var(--primary);
   background-color: var(--tertiary);
-  margin: 0.5rem;
-  padding: 0.25rem;
+  margin: 0.5vw;
+  padding: 0.25vw;
   text-decoration: none;
-  border-radius: 0.5rem;
+  border-radius: 0.5vw;
   font-weight: bold;
-  border: 0.1rem solid var(--tertiary);
+  border: 0.1vw solid var(--tertiary);
 }
 
 .quickLink:hover {
