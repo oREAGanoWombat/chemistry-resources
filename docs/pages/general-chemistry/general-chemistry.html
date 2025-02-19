@@ -14,6 +14,27 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            TeX:{equationNumbers:{autoNumber:'AMS'}}
+            }
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script>
+        window.MathJax = {
+        tex: {
+            tags: 'ams'
+        }
+    };</script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
 </head>
 
 <body>
@@ -32,7 +53,49 @@
 <!--end of Navigation bar-->
 
 <!-- Add your docs or application content here -->
-<h1 id="page-title">General Chemistry</h1>
+<h1 class="page-title">General Chemistry</h1>
+<div id="page-content">
+    <div class="content-container side-navbar left">
+            <p class="topic thermochemistry" id="thermochemistry-topic-header">Thermochemistry</p>
+            <a class="resource button enthalpy" id="enthalpy-button" href="/docs/pages/general-chemistry/thermochemistry/enthalpy.html">Enthalpy</a>
+            <a class="resource button hess-law" id="hess-law-button" href="/docs/pages/general-chemistry/thermochemistry/hess-law.html">Hess' Law</a>
+            <a class="resource button thermochemical-equations" id="thermochemical-equations-button" href="/docs/pages/general-chemistry/thermochemistry/thermochemical-equations.html">Thermochemical Equations</a>
+    </div>
+
+    <div class="content-container middle" id="general-chemistry-container">
+        <div class="content-section main" id="general-chemistry-equations-div">
+            <p class="content-title" id="general-chemistry-equations-title">Equations</p>
+            <div class="equations-container">
+                \begin{equation} \label{eq:1}
+                \Delta H_{rxn}^\circ = \{ bonds broken \} - \{ bonds formed \}
+                \end{equation}
+
+                \begin{equation} \label{eq:2}
+                    \Delta H_{rxn}^\circ = ( \Sigma \Delta H_f^\circ [products]) -(\Sigma \Delta H_f^\circ [reactants])
+                \end{equation}
+
+                \begin{equation} \label{eq:3}
+                    q = mS \Delta T
+                \end{equation}
+
+                \begin{equation} \label{eq:4}
+                    \Delta T = T_{final} - T_{initial}
+                \end{equation}
+
+                \begin{equation} \label{eq:5}
+                    w = \Delta n_g R T
+                \end{equation}
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="content-section links" id="general-chemistry-quicklinks-div">
+            <p class="content-title" id="general-chemistry-quicklinks-title">Quick Links</p>
+        </div>
+    </div>
+
+</div>
 
 </body>
 
