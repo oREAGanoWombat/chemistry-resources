@@ -4,6 +4,7 @@
   --tertiary: #629460;
   --black: #343633;
   --white: #F9EBE0;
+  --gray: #7C7F7A;
   --titles: "Impact", sans-serif;
 }
 
@@ -392,4 +393,31 @@ h1 {
 
 .quickLink:hover {
   background-color: var(--white);
+}
+
+.equation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centering equation and notes */
+  text-align: center;
+  padding: 1vw;
+  margin: 1.5vw auto;
+  max-width: 40vw;
+  border: 0.2vw solid var(--black);
+  border-radius: 1vw;
+  background: var(--white);
+}
+
+.equation-card p {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  color: var(--gray);
+  white-space: nowrap; /* prevents text wrap*/
+  overflow: hidden; /* hides overflow text */
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
+
+.equation-card mjx-container {
+  display: block;
 }
