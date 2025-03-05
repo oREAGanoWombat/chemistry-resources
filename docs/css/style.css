@@ -33,6 +33,11 @@ h1 {
   font-family: var(--titles);
 }
 
+a {
+  color: var(--tertiary);
+  font-weight: bold;
+}
+
 .small-hr {
   border: none;
   border-top: 0.05vw dashed var(--tertiary);
@@ -200,4 +205,28 @@ h1 {
 
 .equation-card mjx-container {
   display: block;
+}
+
+h3 {
+  margin-left: 4vw;
+}
+
+.laundry-list p {
+  margin-left: 2vw;
+}
+
+.index-content p {
+  margin-left: 2vw;
+}
+
+#index-page-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0.5vw
+}
+
+.list {
+  border: 1px solid var(--lightgray);
+  padding: 0.5vw;
 }
