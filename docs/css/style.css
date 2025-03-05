@@ -1,11 +1,14 @@
 :root {
-  --primary: #7D387D;
-  --secondary: #C45BAA;
-  --tertiary: #629460;
-  --black: #343633;
-  --white: #F9EBE0;
-  --gray: #7C7F7A;
-  --titles: "Impact", sans-serif;
+  --primary: #990000;
+  --primarylight: #b40000;
+  --secondary: #3e0000;
+  --tertiary: #ea1500;
+  --black: #1a1a1a;
+  --white: #e5e5e5;
+  --lightgray: #b2b2b2;
+  --mediumgray: #808080;
+  --darkgray: #4d4d4d;
+  --titles: "Roboto", sans-serif;
 }
 
 html {
@@ -13,235 +16,7 @@ html {
   color: var(--black);
   font-size: 1.5vw;
   line-height: 1.4;
-  font-family: "Optima",sans-serif;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid var(--white);
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid var(--white);
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+  font-family: "Roboto Light",sans-serif;
 }
 
 hr {
@@ -250,7 +25,7 @@ hr {
   border-width: 0.05vw;
   border-color: var(--black);
   background-color: var(--black);
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -266,12 +41,12 @@ h1 {
 }
 
 .navbar {
-  background-color: var(--tertiary);
+  background-color: var(--lightgray);
   color: var(--white);
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 0.5vw solid var(--tertiary);
+  border: 0.5vw solid var(--lightgray);
   border-radius: 0.5vw;
 }
 
@@ -286,15 +61,14 @@ h1 {
   border-radius: 0.5vw;
   font-size: 3vw;
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--white);
   font-family: var(--titles);
-  font-variant: small-caps;
 }
 
 .nav-item #navbutton-home:hover {
-  background-color: var(--secondary);
-  border: 0.25vw solid var(--secondary);
-  color: var(--primary);
+  background-color: var(--primarylight);
+  border: 0.25vw solid var(--primarylight);
+  color: var(--white);
 }
 
 .nav-item {
@@ -302,20 +76,19 @@ h1 {
 }
 
 .nav-item a {
-  background-color: var(--secondary);
-  border: 0.25vw solid var(--secondary);
+  background-color: var(--primary);
+  border: 0.25vw solid var(--primary);
   border-radius: 0.5vw;
   font-size: 2vw;
   text-decoration: none;
-  color: var(--primary);
+  color: var(--white);
   font-family: var(--titles);
-  font-variant: small-caps;
 }
 
 .nav-item a:hover {
-  background-color: var(--primary);
-  border: 0.25vw solid var(--primary);
-  color: var(--secondary);
+  background-color: var(--primarylight);
+  border: 0.25vw solid var(--primarylight);
+  color: var(--white);
 }
 
 .page-title {
@@ -339,7 +112,7 @@ h1 {
 }
 
 .side-navbar.left a {
-  color: var(--black);
+  color: var(--white);
   text-decoration: none;
   background-color: var(--secondary);
   padding: 0.125vw;
@@ -348,24 +121,25 @@ h1 {
 }
 
 .side-navbar.left a:hover {
-  background-color: var(--white);
+  background-color: var(--primarylight);
 }
 
 .topic {
   margin-bottom: -0.25vw;
   text-decoration: underline;
   font-family: var(--titles);
-  font-size: 1.25vw;
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 .content-title {
   font-family: var(--titles);
   text-align: left;
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: var(--primary);
-  padding-left: 1vw;
-  text-decoration: underline;
+  padding-left: 8vw;
   margin-bottom: 0vw;
+  font-weight: bold;
 }
 
 .content-container.middle {
@@ -381,7 +155,7 @@ h1 {
 }
 
 .quickLink {
-  color: var(--primary);
+  color: var(--secondary);
   background-color: var(--tertiary);
   margin: 0.5vw;
   padding: 0.25vw;
@@ -389,10 +163,16 @@ h1 {
   border-radius: 0.5vw;
   font-weight: bold;
   border: 0.1vw solid var(--tertiary);
+  margin-left: 4vw;
 }
 
 .quickLink:hover {
   background-color: var(--white);
+}
+
+.equation-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .equation-card {
@@ -400,18 +180,18 @@ h1 {
   flex-direction: column;
   align-items: center; /* centering equation and notes */
   text-align: center;
-  padding: 1vw;
+  font-size: 1.2vw;
   margin: 1.5vw auto;
   max-width: 40vw;
-  border: 0.2vw solid var(--black);
+  border: 0.2vw solid var(--primary);
   border-radius: 1vw;
   background: var(--white);
 }
 
 .equation-card p {
   margin-top: 1vw;
-  font-size: 1.2vw;
-  color: var(--gray);
+  font-size: 1vw;
+  color: var(--mediumgray);
   white-space: nowrap; /* prevents text wrap*/
   overflow: hidden; /* hides overflow text */
   text-overflow: ellipsis;

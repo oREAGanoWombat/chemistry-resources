@@ -126,6 +126,48 @@ const equationsArray = {
             equation: "\\begin{equation} \\begin{aligned} \\Delta H &= \\sum \\text{coeff} \\cdot \\Delta H_f^{\\circ} (\\text{products}) \\\\ &\\quad - \\sum \\text{coeff} \\cdot \\Delta H_f^{\\circ} (\\text{reactants}) \\end{aligned} \\end{equation}",
             notes: "\\[ \\begin{aligned} \\Delta H & = \\text{ enthalpy change of reaction} \\\\ \\Delta H_f^{\\circ} & = \\text{ standard enthalpy of formation} \\\\ \\text{coeff} & = \\text{ stoichiometric coefficients from balanced equation} \\end{aligned} \\]",
             general_chemistry: true,
+        },
+        {
+            name: "standard-entropy-change",
+            equation: "\\begin{equation} \\Delta S_{rxn}^{\\circ} = \\sum \\Delta S_{products}^{\\circ} - \\sum \\Delta S_{reactants}^{\\circ} \\end{equation}",
+            notes: "",
+            general_chemistry: true,
+        },
+        {
+            name: "gibbs-free-energy-A",
+            equation: "\\begin{equation} \\Delta G = \\Delta H - T \\Delta S \\end{equation}",
+            notes: "\\[ \\begin{aligned} \\Delta G & = \\text{ Change in Gibbs Free Energy} \\\\ \\Delta H & = \\text{ Change in Enthalpy} \\\\ \\Delta S & = \\text{ Change in Entropy} \\end{aligned} \\]",
+            general_chemistry: true,
+        },
+        {
+            name: "gibbs-free-energy-B",
+            equation: "\\begin{equation} \\Delta G = \\Delta G^{\\circ} + RT \\ \\ln Q \\end{equation}",
+            notes: "\\( Q = \\text{ reaction quotient} \\)",
+            general_chemistry: true,
+        },
+        {
+            name: "standard-gibbs-free-energy",
+            equation: "\\begin{equation} \\Delta G^{\\circ} = -RT \\ \\ln K \\end{equation}",
+            notes: "\\( \\begin{aligned} R & = \\text{ universal gas constant} \\\\ T & = \\text{ temperature (K)} \\\\ K & = \\text{ equilibrium constant} \\end{aligned} \\)",
+            general_chemistry: true,
+        },
+        {
+            name: "equilibrium-constant-concentrations",
+            equation: "\\begin{equation} K_{c} = \\frac{[C]^{c} [D]^{d}}{[A]^{a} [B]^{b}} \\end{equation}",
+            notes: "",
+            general_chemistry: true,
+        },
+        {
+            name: "equilibrium-constant-pressures",
+            equation: "\\begin{equation} K_{P} = \\frac{P_{C}^{c} P_{D}^{d}}{P_{A}^{a} P_{B}^{b}} \\end{equation}",
+            notes: "",
+            general_chemistry: true,
+        },
+        {
+            name: "entropy-vaporization",
+            equation: " \\begin{equation} \\Delta S_{vap} = \\frac{q_{rev}}{T_b} = \\frac{\\Delta H_{vap}}{T_b} \\end{equation}",
+            notes: "\\( \\begin{aligned} q_{rev} & = \\text{ energy for the reverse reaction} \\\\ T_{b} & = \\text{ standard boiling temperature} \\end{aligned} \\)",
+            general_chemistry: true,
         }
     ]
 };
