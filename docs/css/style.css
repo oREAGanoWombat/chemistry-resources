@@ -1,3 +1,12 @@
+/* Import Fonts
+ - Roboto
+ - Oswald
+ - Montserrat
+ - Exo
+ - Titillium Web
+ - IBM Plex Mono */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 :root {
   --primary: #990000;
   --primarylight: #b40000;
@@ -8,7 +17,9 @@
   --lightgray: #b2b2b2;
   --mediumgray: #808080;
   --darkgray: #4d4d4d;
-  --titles: "Roboto", sans-serif;
+  --titles: "Exo", sans-serif;
+  --headings: "Titillium Web", sans-serif;
+  --body-font: "Roboto", sans-serif;
 }
 
 html {
@@ -16,7 +27,7 @@ html {
   color: var(--black);
   font-size: 1.5vw;
   line-height: 1.4;
-  font-family: "Roboto Light",sans-serif;
+  font-family: var(--body-font);
 }
 
 hr {
@@ -58,6 +69,19 @@ a {
 .nav-link {
   border: none;
   cursor: pointer;
+}
+
+.include-icon.general-chemistry::before {
+  content: "";
+  display: inline-block;
+  width: 3vw;
+  height: auto;
+  max-height: 100%;
+  background-image: url("/chemistry-resources/docs/icons/Icon_Atom_MediumGrey.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5vw;
+  vertical-align: middle;
 }
 
 .nav-item #navbutton-home {
@@ -102,7 +126,7 @@ a {
   font-size: 3vw;
 }
 
-#page-content{
+.page-content{
   display: flex;
   flex-direction: row;
 }
@@ -229,4 +253,30 @@ h3 {
 .list {
   border: 1px solid var(--lightgray);
   padding: 0.5vw;
+}
+
+.alert {
+  background-color: var(--primarylight);
+  border-radius: 0.5vw;
+}
+
+.alert p {
+  text-align: center;
+  font-size: 1vw;
+  font-style: italic;
+  font-family: var(--headings);
+  padding-top: -1vw;
+  padding-bottom: -1vw;
+  margin: 0vw;
+}
+
+.construction-warning {
+  text-align: center;
+  font-family: var(--titles);
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-style: none;
+  text-decoration: underline;
+  color: var(--white);
+  margin: 0vw;
 }

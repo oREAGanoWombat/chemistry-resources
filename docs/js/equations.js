@@ -153,7 +153,7 @@ const equationsArray = {
         },
         {
             name: "equilibrium-constant-concentrations",
-            equation: "\\begin{equation} K_{c} = \\frac{[C]^{c} [D]^{d}}{[A]^{a} [B]^{b}} \\end{equation}",
+            equation: "\\begin{equation} K_{C} = \\frac{[C]^{c} [D]^{d}}{[A]^{a} [B]^{b}} \\end{equation}",
             notes: "",
             general_chemistry: true,
         },
@@ -167,6 +167,18 @@ const equationsArray = {
             name: "entropy-vaporization",
             equation: " \\begin{equation} \\Delta S_{vap} = \\frac{q_{rev}}{T_b} = \\frac{\\Delta H_{vap}}{T_b} \\end{equation}",
             notes: "\\( \\begin{aligned} q_{rev} & = \\text{ energy for the reverse reaction} \\\\ T_{b} & = \\text{ standard boiling temperature} \\end{aligned} \\)",
+            general_chemistry: true,
+        },
+        {
+            name: "reaction-quotient-concentrations",
+            equation: "\\begin{equation} Q_{C} = \\frac{[C]^{c} [D]^{d}}{[A]^{a} [B]^{b}} \\end{equation}",
+            notes: "",
+            general_chemistry: true,
+        },
+        {
+            name: "reaction-quotient-pressures",
+            equation: "\\begin{equation} Q_{P} = \\frac{P_{C}^{c} P_{D}^{d}}{P_{A}^{a} P_{B}^{b}} \\end{equation}",
+            notes: "",
             general_chemistry: true,
         }
     ]
