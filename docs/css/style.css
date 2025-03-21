@@ -218,11 +218,6 @@ h1.page-title.include-icon::before {
   background-color: var(--white);
 }
 
-.equation-container {
-  display: flex;
-  flex-direction: row;
-}
-
 .equation-card {
   display: flex;
   flex-direction: column;

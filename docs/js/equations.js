@@ -1,4 +1,7 @@
 const equationsDiv = document.getElementById('equations-placeholder');
+const equationByNameDiv = document.querySelectorAll(".equation-container.by-name");
+// const equationByNameDiv = document.getElementById('equation-by-name');
+
 const equationsArray = {
     equations: [
         {
@@ -187,6 +190,9 @@ const equationsArray = {
 const setEquationCards = (arr = equationsArray.equations) => {
     //Determine discipline based on #equations-placeholder
     let discipline = null;
+    if (equationsDiv == null) {
+        return;
+    }
     if (equationsDiv.classList.contains("generalChemistry")) {
         discipline = "general_chemistry";
     } else if (equationsDiv.classList.contains("organicChemistry")) {
@@ -206,9 +212,33 @@ const setEquationCards = (arr = equationsArray.equations) => {
 
     // Re-render MathJax to ensure equations are processed
     if (window.MathJax) {
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+        MathJax.typesetPromise();
     }
 };
 
-// Call function to populate equations
+const setEquationByName = () => {
+    equationByNameDiv.forEach(div => {
+        // Find a matching equation by checking if the div's class list contains an equation name
+        const matchingEquation = equationsArray.equations.find(eq => div.classList.contains(eq.name));
+        // const matchingEquation = arr.filter(eq => div.classList.contains(eq.name));
+
+        if (matchingEquation) {
+            // insert the equation into the div
+            div.innerHTML = `
+                <div class="equation-card">
+                    ${matchingEquation.equation}
+                    <p><span class="equation-notes">${matchingEquation.notes !== null ? matchingEquation.notes : ""}</span></p>
+                </div>
+            `;
+        }
+    });
+
+    // re-render mathjax to process new equation
+    if (window.MathJax) {
+        MathJax.typesetPromise();
+    }
+};
+
+// run functions when page loads
 setEquationCards();
+setEquationByName();
