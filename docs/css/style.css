@@ -75,13 +75,24 @@ a {
   content: "";
   display: inline-block;
   width: 3vw;
-  height: auto;
-  max-height: 100%;
-  background-image: url("/chemistry-resources/docs/icons/Icon_Atom_MediumGrey.png");
+  height: 3vw;
+  background-image: url("/chemistry-resources/docs/css/icons/Icon_Atom_MediumGrey.png");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 0.5vw;
+  margin-right: 0.15vw;
   vertical-align: middle;
+}
+
+.nav-link.include-icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link.include-icon::before {
+  height: 2vw;
+  margin-right: -0.5vw;
+  margin-left: 0.25vw;
+  padding: 0;
 }
 
 .nav-item #navbutton-home {
@@ -104,7 +115,7 @@ a {
   padding: 0.5vw;
 }
 
-.nav-item a {
+.nav-link {
   background-color: var(--primary);
   border: 0.25vw solid var(--primary);
   border-radius: 0.5vw;
@@ -122,8 +133,16 @@ a {
 
 .page-title {
   font-family: var(--titles);
-  text-align: center;
   font-size: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.page-title.include-icon::before {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 0.5vw;
 }
 
 .page-content{
