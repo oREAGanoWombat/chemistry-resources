@@ -370,3 +370,10 @@ h3 {
   margin: 0 0 0.5vw 0;
   text-align: justify;
 }
+
+.example-problem.list {
+  font-size: 1.25vw;
+  padding-left: 3vw;
+  text-align: left;
+  border: none;
+}
