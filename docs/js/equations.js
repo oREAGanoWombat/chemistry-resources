@@ -181,7 +181,7 @@ const equationsArray = {
         },
         {
             name: "heat-bomb-calorimeter",
-            equation: "\\begin{equation} \\begin{aligned} q_{cal} & = -C_{cal} \\times \\Delta T_{cal} = \\Delta E \\\\ & = q_{bomb} + q_{water} \\\\ & = -q_{cal} \\end{aligned} \\end{equation}",
+            equation: "\\begin{equation} \\begin{aligned} q_{cal} & = -C_{cal} \\times \\Delta T_{cal} = \\Delta E \\\\ & = q_{bomb} + q_{water} \\\\ & = -q_{rxn} \\end{aligned} \\end{equation}",
             notes: "\\( C_{cal} = \\text{specific heat capacity of calorimeter} \\)",
             general_chemistry: true,
             acidbase: true,
