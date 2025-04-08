@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acid-Base Chemistry</title>
+    <link rel="stylesheet" href="/chemistry-resources/docs/css/style.css">
+    <meta name="description" content="">
+
+    <script src="/chemistry-resources/docs/css/navigation-1.1/tabsets.js"></script>
+
+    <meta name="theme-color" content="#fafafa">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            TeX:{equationNumbers:{autoNumber:'AMS'}
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script>
+        window.MathJax = {
+            tex: {
+                tags: 'ams'
+                packages: {'[+]': ['mhchem']}
+            },
+            loader: {load: ['[tex]/mhchem']},
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+</head>
+
+<body>
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+    $(function(){
+        $("#nav-placeholder").load("/chemistry-resources/docs/navigation.html");
+    });
+
+</script>
+<!--end of Navigation bar-->
+
+<h1 class="page-title general-chemistry include-icon">Acid-Base Chemistry</h1>
+
+<div class="body-content">
+    <div class="content-section">
+        <p class="content-title">Equations</p>
+        <div class="equation-container acid-base" id="equations-placeholder"></div>
+    </div>
+
+    <div class="content-section">
+        <p class="content-title">Unit Conversions</p>
+        <div class="equation-container acid-base" id="unit-conversions-placeholder"></div>
+    </div>
+
+    <div class="content-section">
+        <p class="content-title">Constants</p>
+        <div class="equation-container acid-base" id="constants-placeholder"></div>
+    </div>
+
+        <div class="content-section">
+            <div class="resource-div">
+            <p class="content-title">Resources</p>
+            <div class="resource-container">
+                <a class="resource" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_General_Chemistry%3A_Principles_Patterns_and_Applications_(Averill)/04%3A_Reactions_in_Aqueous_Solution/4.06%3A_Acids_and_Bases">Acids and Bases (LibreTexts)</a>
+                <a class="resource" href="https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_General_Chemistry%3A_Principles_Patterns_and_Applications_(Averill)/04%3A_Reactions_in_Aqueous_Solution/4.07%3A_Acid_Base_Reactions">Acid Base Reactions (LibreTexts)</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<footer>
+    <script src="/chemistry-resources/docs/js/equations.js"></script>
+</footer>
+
+</html>
