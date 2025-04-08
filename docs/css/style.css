@@ -318,10 +318,12 @@ h3 {
 .resource-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* keep items from stretching horizontally */
   padding-left: 5vw;
 }
 
 .resource {
+  display: inline-block;
   color: var(--primary);
   text-decoration: none;
   background-color: var(--lightgray);
