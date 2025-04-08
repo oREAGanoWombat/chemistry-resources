@@ -74,7 +74,7 @@ const equationsArray = {
             equation: "\\begin{equation} PV = nRT \\end{equation}",
             notes: "\\[ \\begin{aligned} P & = \\text{ pressure (atm)} \\\\ V & = \\text{ volume (L)} \\\\ n & = \\text{ moles of gas} \\\\ R & = \\text{ ideal gas constant} \\\\ T & = \\text{ temperature (K)} \\end{aligned} \\]",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "energy-equations",
@@ -99,7 +99,7 @@ const equationsArray = {
             equation: "\\begin{equation} \\begin{aligned} \\Delta H &= \\sum \\text{coeff} \\cdot \\Delta H_f^{\\circ} (\\text{products}) \\\\ &\\quad - \\sum \\text{coeff} \\cdot \\Delta H_f^{\\circ} (\\text{reactants}) \\end{aligned} \\end{equation}",
             notes: "\\[ \\begin{aligned} \\Delta H & = \\text{ enthalpy change of reaction} \\\\ \\Delta H_f^{\\circ} & = \\text{ standard enthalpy of formation} \\\\ \\text{coeff} & = \\text{ stoichiometric coefficients from balanced equation} \\end{aligned} \\]",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "standard-entropy-change",
@@ -118,42 +118,42 @@ const equationsArray = {
             equation: "\\begin{equation} \\Delta G = \\Delta G^{\\circ} + RT \\ \\ln Q = RT \\ln \\left(\\frac{Q}{K}\\right) \\end{equation}",
             notes: "\\( Q = \\text{ reaction quotient} \\)",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "standard-gibbs-free-energy",
             equation: "\\begin{equation} \\Delta G^{\\circ} = -RT \\ \\ln K \\end{equation}",
             notes: "\\( \\begin{aligned} R & = \\text{ universal gas constant} \\\\ T & = \\text{ temperature (K)} \\\\ K & = \\text{ equilibrium constant} \\end{aligned} \\)",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "standard-gibbs-free-energy-2",
             equation: "\\begin{equation} \\Delta G^{\\circ} = \\Delta H^{\\circ} - T \\Delta S^{\\circ} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "equilibrium-constant-concentrations",
             equation: "\\begin{equation} K_{C} = \\frac{[C]^{c} [D]^{d}}{[A]^{a} [B]^{b}} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "equilibrium-constant-pressures",
             equation: "\\begin{equation} K_{p} = \\frac{P_{C}^{c} P_{D}^{d}}{P_{A}^{a} P_{B}^{b}} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "equilibrium-constant-conversion",
             equation: "\\begin{equation} K_{p} = K_{c} (RT)^{ \\Delta n_{gas}} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "entropy-vaporization",
@@ -178,84 +178,84 @@ const equationsArray = {
             equation: "\\begin{equation} q_{cal} = -C_{cal} \\ \\Delta T_{cal} = \\Delta E \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "second-equilibrium-constant",
             equation: "\\begin{equation} \\ln K_{2} = \\ln K_{1} + \\left(\\frac{\\Delta H^{\\circ}}{R}\\right) \\left[ \\left(\\frac{1}{T_{1}}\\right) - \\left(\\frac{1}{T_{2}}\\right) \\right] \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "pH",
             equation: "\\begin{equation} \\begin{aligned} pH & = -\\log_{10}\\left[\\ce{ H3O+ }\\right] \\\\ \\left[\\ce{ H3O+ }\\right] & = 10^{-pH} \\\\ \\left[\\ce{ H3O+ }\\right] & = \\sqrt{K_{a} \\times c_{0}} \\end{aligned} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "pOH",
             equation: "\\begin{equation} \\begin{aligned} pOH & = -\\log_{10}\\left[\\ce{ OH- }\\right] \\\\ \\left[\\ce{ OH- }\\right] & = 10^{-pOH} \\\\ \\left[\\ce{ OH- }\\right] & = \\sqrt{K_{b} \\times c_{0}} \\end{aligned} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "pH-pOH-relation",
             equation: "\\begin{equation} \\begin{aligned} pH + pOH & = 14 \\\\ K_{w} & = \\left[\\ce{ H3O+ }\\right] \\left[\\ce{ OH- }\\right] \\\\ & = 1.0*10^{-14} \\end{aligned} \\end{equation}",
             notes: "\\begin{aligned} T = 298.15 K \\end{aligned}",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "pH-polyprotic",
             equation: "\\begin{equation} pH\\left(\\text{polyprotic acid}\\right) = \\frac{\\left(pK_{a1} + pK_{a2}\\right)}{2} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "pKa",
             equation: "\\begin{equation} \\begin{aligned} pK_{a} & = -\\log_{10}\\left(K_{a}\\right) \\\\ K_{a} & = 10^{-pK_{a}} \\end{aligned} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "pKb",
             equation: "\\begin{equation} \\begin{aligned} pK_{b} & = -\\log_{10}\\left(K_{b}\\right) \\\\ K_{b} & = 10^{-pK_{b}} \\end{aligned} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "pKa-pKb-relation",
             equation: "\\begin{equation} \\begin{aligned} pK_{a} + pK_{b} & = 14 \\\\ K_{w} & = K_{a} * K_{b} \\end{aligned} \\end{equation}",
             notes: "\\begin{aligned} T = 298.15 K \\end{aligned}",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "quadratic-formula",
             equation: "\\begin{equation} x = \\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "percent-ionization-estimate",
             equation: "\\begin{equation} \\text{% ionization estimate} = \\sqrt{\\frac{K_{a,b}}{c_{0}}} \\times 100\\% \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "equilibrium-constant-reaction",
             equation: "\\begin{equation} K_{reaction} = \\frac{K_{a}\\left(\\text{forward reacting acid}\\right)}{K_{a}\\left(\\text{reverse reacting/produced acid}\\right)} \\end{equation}",
             notes: "",
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         }
     ],
     unitConversions: [
@@ -276,14 +276,14 @@ const equationsArray = {
             equation: "\\begin{equation} 1 \\text{ atm} = 760 \\text{ mmHg} = 760 \\text{ torr} \\end{equation}",
             notes: null,
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
         {
             name: "kelvin-conversion",
             equation: "\\begin{equation} T(K) = T(^{\\circ}C) + 273.15 \\end{equation}",
             notes: null,
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
     ],
     constants: [
@@ -292,7 +292,7 @@ const equationsArray = {
             equation: "\\begin{equation} R = 0.0821 \\frac{L \\cdot atm}{K \\cdot mol} = 8.314 \\frac{J}{K \\cdot mol} \\end{equation}",
             notes: null,
             general_chemistry: true,
-            exam2: true;
+            acidbase: true,
         },
     ]
 };
@@ -305,8 +305,10 @@ const setEquationCards = (arr = equationsArray.equations) => {
     }
     if (equationsDiv.classList.contains("generalChemistry")) {
         discipline = "general_chemistry";
-    } else if (equationsDiv.classList.contains("organicChemistry")) {
+    } if (equationsDiv.classList.contains("organicChemistry")) {
         discipline = "organic_chemistry";
+    } else if (equationsDiv.classList.contains("acid-base")) {
+        discipline = "acidbase";
     }
 
     // Filter equations based on div class
@@ -330,8 +332,10 @@ const setUnitConversionCards = (arr = equationsArray.unitConversions) => {
     }
     if (unitConversionsDiv.classList.contains("generalChemistry")) {
         discipline = "general_chemistry";
-    } else if (unitConversionsDiv.classList.contains("organicChemistry")) {
+    } if (unitConversionsDiv.classList.contains("organicChemistry")) {
         discipline = "organic_chemistry";
+    } else if (unitConversionsDiv.classList.contains("acid-base")) {
+        discipline = "acidbase";
     }
 
     // Filter equations based on div class
@@ -355,8 +359,10 @@ const setConstantsCards = (arr = equationsArray.constants) => {
     }
     if (constantsDiv.classList.contains("generalChemistry")) {
         discipline = "general_chemistry";
-    } else if (constantsDiv.classList.contains("organicChemistry")) {
+    } if (constantsDiv.classList.contains("organicChemistry")) {
         discipline = "organic_chemistry";
+    } else if (constantsDiv.classList.contains("acid-base")) {
+        discipline = "acidbase";
     }
 
     // Filter equations based on div class
