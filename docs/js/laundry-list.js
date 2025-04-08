@@ -33,6 +33,14 @@ const laundryArray = {
         {
             content: 'Add GenChem info page for K & Q',
             status: 'to-do',
+        },
+        {
+            content: 'Add GenChem info page for acid base chemistry',
+            status: 'done',
+        },
+        {
+            content: 'Add GenChem info page for bomb calorimetry',
+            status: 'done',
         }
     ]
 };
