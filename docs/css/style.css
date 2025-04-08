@@ -187,6 +187,7 @@ h1.page-title.include-icon::before {
   color: var(--primary);
   padding-left: 8vw;
   margin-bottom: 0vw;
+  margin-top: 0vw;
   font-weight: bold;
 }
 
@@ -307,4 +308,34 @@ h3 {
 
 .no-spacing {
   line-height: 0vw;
+}
+
+.resource-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+}
+
+.resource {
+  color: var(--primary);
+  text-decoration: none;
+  background-color: var(--lightgray);
+  border-radius: 0.5vw;
+  margin: 0.25vw;
+  padding: 0.25vw;
+}
+
+.resource:hover {
+  background-color: var(--mediumgray);
+  color: var(--primarylight);
+  text-decoration: underline;
+}
+
+.content-section {
+  border-bottom: 2px dashed var(--lightgray);
 }
