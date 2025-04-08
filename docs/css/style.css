@@ -342,3 +342,31 @@ h3 {
 .content-section {
   border-bottom: 2px dashed var(--lightgray);
 }
+
+.example-problem-container {
+  background-color: var(--lightestgray);
+  border-radius: 0.5vw;
+  border: 0.5vw solid var(--lightgray);
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 0.5vw;
+}
+
+.example-problem {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.example-problem.title {
+  font-family: var(--titles);
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-decoration: underline;
+  margin: 0.5vw 0 0 0;
+}
+
+.example-problem.text {
+  font-size: 1.25vw;
+  margin: 0 0 0.5vw 0;
+  text-align: justify;
+}
