@@ -102,6 +102,12 @@ const equationsArray = {
             acidbase: true,
         },
         {
+            name: "enthalpy-change-2",
+            equation: "\\begin{equation} \\Delta H = q_{v} + \\Delta n_{gas}RT \\end{equation}",
+            notes: "\\( q_{v} = \\Delta U\\)",
+            general_chemistry: true,
+        },
+        {
             name: "standard-entropy-change",
             equation: "\\begin{equation} \\Delta S_{rxn}^{\\circ} = \\sum \\Delta S_{products}^{\\circ} - \\sum \\Delta S_{reactants}^{\\circ} \\end{equation}",
             notes: "",
@@ -175,8 +181,8 @@ const equationsArray = {
         },
         {
             name: "heat-bomb-calorimeter",
-            equation: "\\begin{equation} q_{cal} = -C_{cal} \\ \\Delta T_{cal} = \\Delta E \\end{equation}",
-            notes: "",
+            equation: "\\begin{equation} \\begin{aligned} q_{cal} & = -C_{cal} \\times \\Delta T_{cal} = \\Delta E \\\\ & = q_{bomb} + q_{water} \\\\ & = -q_{cal} \\end{aligned} \\end{equation}",
+            notes: "\\( C_{cal} = \\text{specific heat capacity of calorimeter} \\)",
             general_chemistry: true,
             acidbase: true,
         },
@@ -284,7 +290,7 @@ const equationsArray = {
             notes: null,
             general_chemistry: true,
             acidbase: true,
-        },
+        }
     ],
     constants: [
         {
