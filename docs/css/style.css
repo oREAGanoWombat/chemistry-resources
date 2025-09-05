@@ -239,7 +239,7 @@ h3 {
   margin-left: 2vw;
 }
 
-.index-content p {
+.index-content * {
   margin-left: 2vw;
 }
 
@@ -279,4 +279,16 @@ h3 {
   text-decoration: underline;
   color: var(--white);
   margin: 0vw;
+}
+
+.button1 {
+  background-color: var(--primary);
+  border: 0.25vw solid var(--primary);
+  border-radius: 0.5vw;
+  font-size: 2vw;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--titles);
+  margin-left: 4vw;
+  margin-bottom: 2vw;
 }
