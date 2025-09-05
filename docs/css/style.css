@@ -13,7 +13,9 @@
   --secondary: #3e0000;
   --tertiary: #ea1500;
   --black: #1a1a1a;
-  --white: #e5e5e5;
+  --blackestblack: #000000;
+  --white: #ffffff;
+  --graywhite: #e5e5e5;
   --lightestgray: #cccccc;
   --lightgray: #b2b2b2;
   --mediumgray: #808080;
@@ -23,12 +25,26 @@
   --body-font: "Roboto", sans-serif;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   background-color: var(--white);
   color: var(--black);
   font-size: 1.5vw;
   line-height: 1.4;
   font-family: var(--body-font);
+  box-sizing: border-box;
+  border: 1vw solid var(--secondary);
+}
+
+footer {
+  background-color: var(--lightgray);
+  color: var(--black);
+  text-align: left;
+  padding: 0.25vw 1vw 0.25vw 1vw;
 }
 
 hr {
@@ -64,7 +80,6 @@ a {
   flex-direction: row;
   align-items: center;
   border: 0.5vw solid var(--lightgray);
-  border-radius: 0.5vw;
 }
 
 .nav-link {
@@ -157,7 +172,6 @@ h1.page-title.include-icon::before {
   flex-direction: column;
   background-color: var(--primary);
   padding: 0.5vw 1vw;
-  border-radius: 0.5vw;
   color: var(--white);
 }
 
@@ -195,25 +209,22 @@ h1.page-title.include-icon::before {
 
 .content-container.middle {
   flex-grow: 4;
+  margin-bottom: 1vw;
 }
 
 .quicklinks-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 0.5vw;
   justify-content: space-around;
-  padding-left: 1vw;
 }
 
 .quickLink {
   color: var(--secondary);
   background-color: var(--tertiary);
-  margin: 0.5vw;
   padding: 0.25vw;
   text-decoration: none;
   border-radius: 0.5vw;
   font-weight: bold;
-  border: 0.1vw solid var(--tertiary);
   margin-left: 4vw;
 }
 
@@ -292,7 +303,6 @@ h3 {
   font-family: var(--titles);
   font-size: 1.5vw;
   font-weight: bold;
-  font-style: none;
   text-decoration: underline;
   color: var(--white);
   margin: 0vw;
@@ -340,9 +350,7 @@ h3 {
   text-decoration: underline;
 }
 
-.content-section {
-  border-bottom: 2px dashed var(--lightgray);
-}
+
 
 .example-problem-container {
   background-color: var(--lightestgray);
