@@ -14,6 +14,7 @@
   --tertiary: #ea1500;
   --black: #1a1a1a;
   --white: #e5e5e5;
+  --lightestgray: #cccccc;
   --lightgray: #b2b2b2;
   --mediumgray: #808080;
   --darkgray: #4d4d4d;
@@ -80,8 +81,20 @@ a {
   background-image: url("icons/Icon_Atom_MediumGrey.png");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 0.5vw;
+  margin-right: 0.15vw;
   vertical-align: middle;
+}
+
+.nav-link.include-icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link.include-icon::before {
+  height: 2vw;
+  margin-right: -0.5vw;
+  margin-left: 0.25vw;
+  padding: 0;
 }
 
 .nav-item #navbutton-home {
@@ -104,7 +117,7 @@ a {
   padding: 0.5vw;
 }
 
-.nav-item a {
+.nav-link {
   background-color: var(--primary);
   border: 0.25vw solid var(--primary);
   border-radius: 0.5vw;
@@ -122,8 +135,16 @@ a {
 
 .page-title {
   font-family: var(--titles);
-  text-align: center;
   font-size: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.page-title.include-icon::before {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 0.5vw;
 }
 
 .page-content{
@@ -168,6 +189,7 @@ a {
   color: var(--primary);
   padding-left: 8vw;
   margin-bottom: 0vw;
+  margin-top: 0vw;
   font-weight: bold;
 }
 
@@ -197,11 +219,6 @@ a {
 
 .quickLink:hover {
   background-color: var(--white);
-}
-
-.equation-container {
-  display: flex;
-  flex-direction: row;
 }
 
 .equation-card {
@@ -279,6 +296,87 @@ h3 {
   text-decoration: underline;
   color: var(--white);
   margin: 0vw;
+}
+
+.in-progress {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.done {
+  text-decoration: line-through;
+  color: var(--mediumgray);
+}
+
+.no-spacing {
+  line-height: 0vw;
+}
+
+.resource-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* keep items from stretching horizontally */
+  padding-left: 5vw;
+}
+
+.resource {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  background-color: var(--lightgray);
+  border-radius: 0.5vw;
+  margin: 0.25vw;
+  padding: 0.25vw;
+}
+
+.resource:hover {
+  background-color: var(--mediumgray);
+  color: var(--primarylight);
+  text-decoration: underline;
+}
+
+.content-section {
+  border-bottom: 2px dashed var(--lightgray);
+}
+
+.example-problem-container {
+  background-color: var(--lightestgray);
+  border-radius: 0.5vw;
+  border: 0.5vw solid var(--lightestgray);
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 0.5vw;
+}
+
+.example-problem {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.example-problem.title {
+  font-family: var(--titles);
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-decoration: underline;
+  margin: 0.5vw 0 0 0;
+}
+
+.example-problem.text {
+  font-size: 1.25vw;
+  margin: 0 0 0.5vw 0;
+  text-align: justify;
+}
+
+.example-problem.list {
+  font-size: 1.25vw;
+  padding-left: 3vw;
+  text-align: left;
+  border: none;
 }
 
 .button1 {

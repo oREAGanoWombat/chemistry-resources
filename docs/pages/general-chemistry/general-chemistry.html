@@ -28,10 +28,13 @@
     </script>
     <script>
         window.MathJax = {
-        tex: {
-            tags: 'ams'
-        }
-    };</script>
+            tex: {
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            },
+            loader: {load: ['[tex]/mhchem']},
+        };
+    </script>
     <script type="text/javascript" id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </script>
@@ -62,7 +65,9 @@
             <a class="resource button hess-law" id="hess-law-button" href="/docs/pages/general-chemistry/thermochemistry/hess-law.html">Hess' Law</a>
             <a class="resource button thermochemical-equations" id="thermochemical-equations-button" href="/docs/pages/general-chemistry/thermochemistry/thermochemical-equations.html">Thermochemical Equations</a>
             -->
-        <a class="resource button k-and-q" id="k-and-q-button" href="/docs/pages/general-chemistry/understanding-k-and-q.html">Understanding K & Q</a>
+        <a class="resource button k-and-q" id="k-and-q-button" href="/chemistry-resources/docs/pages/general-chemistry/understanding-k-and-q.html">Understanding K & Q</a>
+        <a class="resource button acid-base" id="acid-base-button" href="/chemistry-resources/docs/pages/general-chemistry/acid-base/acid-base.html">Acid Base Chemistry</a>
+        <a class="resource button bomb-calorimetry" id="bomb-calorimetry-button" href="/chemistry-resources/docs/pages/general-chemistry/thermochemistry/bomb-calorimetry.html">Bomb Calorimetry</a>
     </div>
 
     <div class="content-container middle" id="general-chemistry-container">
@@ -74,10 +79,23 @@
 
         <div class="content-section main" id="general-chemistry-equations-div">
             <p class="content-title" id="general-chemistry-equations-title">Equations</p>
-            <div class="equations-container generalChemistry" id="equations-placeholder">
+            <div class="equation-container generalChemistry" id="equations-placeholder">
 
             </div>
 
+            <hr>
+
+            <p class="content-title" id="general-chemistry-unit-conversions-title">Unit Conversions</p>
+            <div class="equation-container generalChemistry" id="unit-conversions-placeholder">
+
+            </div>
+
+            <hr>
+
+            <p class="content-title" id="general-chemistry-constants-title">Constants</p>
+            <div class="equation-container generalChemistry" id="constants-placeholder">
+
+            </div>
         <hr>
 
         <div class="content-section links" id="general-chemistry-quicklinks-div">
@@ -87,7 +105,7 @@
             </div>
         </div>
     </div>
-
+    </div>
 </div>
 
 </body>

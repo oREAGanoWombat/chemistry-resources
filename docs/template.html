@@ -19,19 +19,22 @@
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']]
             },
-            TeX:{equationNumbers:{autoNumber:'AMS'}}
-        }
-        svg: {
-            fontCache: 'global'
-        }
+            TeX:{equationNumbers:{autoNumber:'AMS'}
+            },
+            svg: {
+                fontCache: 'global'
+            }
         };
     </script>
     <script>
         window.MathJax = {
             tex: {
-                tags: 'ams'
-            }
-        };</script>
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            },
+            loader: {load: ['[tex]/mhchem']},
+        };
+    </script>
     <script type="text/javascript" id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </script>
