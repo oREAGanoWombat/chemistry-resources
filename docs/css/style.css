@@ -35,7 +35,7 @@ html {
   color: var(--black);
   font-size: 1.5vw;
   line-height: 1.4;
-  font-family: var(--body-font);
+  font-family: var(--body-font) sans-serif;
   box-sizing: border-box;
   border: 1vw solid var(--secondary);
 }
@@ -43,8 +43,10 @@ html {
 footer {
   background-color: var(--lightgray);
   color: var(--black);
-  text-align: left;
   padding: 0.25vw 1vw 0.25vw 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 hr {
@@ -58,7 +60,7 @@ hr {
 }
 
 h1 {
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
 }
 
 a {
@@ -119,7 +121,7 @@ a {
   font-size: 3vw;
   text-decoration: none;
   color: var(--white);
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
 }
 
 .nav-item #navbutton-home:hover {
@@ -139,7 +141,7 @@ a {
   font-size: 2vw;
   text-decoration: none;
   color: var(--white);
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
 }
 
 .nav-item a:hover {
@@ -149,7 +151,7 @@ a {
 }
 
 .page-title {
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
   font-size: 3vw;
   display: flex;
   align-items: center;
@@ -191,19 +193,19 @@ h1.page-title.include-icon::before {
 .topic {
   margin-bottom: -0.25vw;
   text-decoration: underline;
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
   font-size: 2vw;
   font-weight: bold;
 }
 
 .content-title {
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
   text-align: left;
   font-size: 2.5vw;
   color: var(--primary);
   padding-left: 8vw;
-  margin-bottom: 0vw;
-  margin-top: 0vw;
+  margin-bottom: 0;
+  margin-top: 0;
   font-weight: bold;
 }
 
@@ -255,9 +257,9 @@ h1.page-title.include-icon::before {
   max-width: 90%;
 }
 
-.equation-card mjx-container {
-  display: block;
-}
+/*.equation-card mjx-container {*/
+/*  display: block;*/
+/*}*/
 
 h3 {
   margin-left: 4vw;
@@ -292,20 +294,20 @@ h3 {
   text-align: center;
   font-size: 1vw;
   font-style: italic;
-  font-family: var(--headings);
+  font-family: var(--headings) sans-serif;
   padding-top: -1vw;
   padding-bottom: -1vw;
-  margin: 0vw;
+  margin: 0;
 }
 
 .construction-warning {
   text-align: center;
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
   font-size: 1.5vw;
   font-weight: bold;
   text-decoration: underline;
   color: var(--white);
-  margin: 0vw;
+  margin: 0;
 }
 
 .in-progress {
@@ -319,7 +321,7 @@ h3 {
 }
 
 .no-spacing {
-  line-height: 0vw;
+  line-height: 0;
 }
 
 .resource-div {
@@ -367,7 +369,7 @@ h3 {
 }
 
 .example-problem.title {
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
   font-weight: bold;
   font-size: 1.5vw;
   text-decoration: underline;
@@ -394,7 +396,11 @@ h3 {
   font-size: 2vw;
   text-decoration: none;
   color: var(--white);
-  font-family: var(--titles);
+  font-family: var(--titles) sans-serif;
   margin-left: 4vw;
   margin-bottom: 2vw;
+}
+
+.no-margin {
+  margin: 0;
 }
