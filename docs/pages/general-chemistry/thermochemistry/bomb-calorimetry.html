@@ -75,9 +75,9 @@
     <div class="content-section">
         <p class="content-title">Equations</p>
         <div class="equation-container">
-            <div class="equation-container by-name work-equation" id="equation-by-name"></div>
-            <div class="equation-container by-name enthalpy-change-2" id="equation-by-name"></div>
-            <div class="equation-container by-name heat-bomb-calorimeter" id="equation-by-name"></div>
+            <div class="equation-container by-name work-equation"></div>
+            <div class="equation-container by-name enthalpy-change-2"></div>
+            <div class="equation-container by-name heat-bomb-calorimeter"></div>
         </div>
     </div>
 
@@ -91,8 +91,17 @@
 </div>
 </body>
 
-<footer>
-    <script src="/chemistry-resources/docs/js/equations.js" defer></script>
-</footer>
+<!--Footer-->
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/chemistry-resources/docs/footer.html");
+    });
+
+</script>
+<!--end of Footer-->
 
 </html>

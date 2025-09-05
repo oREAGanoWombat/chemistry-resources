@@ -15,23 +15,14 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <script>
-        MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']]
-            },
-            TeX:{equationNumbers:{autoNumber:'AMS'}}
-        }
-        svg: {
-            fontCache: 'global'
-        }
-        };
-    </script>
-    <script>
         window.MathJax = {
             tex: {
-                tags: 'ams'
-            }
-        };</script>
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            },
+            loader: {load: ['[tex]/mhchem']},
+        };
+    </script>
     <script type="text/javascript" id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </script>
@@ -54,5 +45,18 @@
 <h1 class="page-title">Enthalpy</h1>
 <h1>COMING SOON!</h1>
 </body>
+
+<!--Footer-->
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/chemistry-resources/docs/footer.html");
+    });
+
+</script>
+<!--end of Footer-->
 
 </html>

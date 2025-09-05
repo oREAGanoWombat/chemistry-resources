@@ -20,9 +20,9 @@
   --lightgray: #b2b2b2;
   --mediumgray: #808080;
   --darkgray: #4d4d4d;
-  --titles: "Exo", sans-serif;
-  --headings: "Titillium Web", sans-serif;
-  --body-font: "Roboto", sans-serif;
+  --titles: "Exo";
+  --headings: "Titillium Web";
+  --body-font: "Roboto";
 }
 
 html, body {
@@ -35,7 +35,7 @@ html {
   color: var(--black);
   font-size: 1.5vw;
   line-height: 1.4;
-  font-family: var(--body-font) sans-serif;
+  font-family: var(--body-font), sans;
   box-sizing: border-box;
   border: 1vw solid var(--secondary);
 }
@@ -60,7 +60,7 @@ hr {
 }
 
 h1 {
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
 }
 
 a {
@@ -121,7 +121,7 @@ a {
   font-size: 3vw;
   text-decoration: none;
   color: var(--white);
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
 }
 
 .nav-item #navbutton-home:hover {
@@ -141,7 +141,7 @@ a {
   font-size: 2vw;
   text-decoration: none;
   color: var(--white);
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
 }
 
 .nav-item a:hover {
@@ -151,7 +151,7 @@ a {
 }
 
 .page-title {
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
   font-size: 3vw;
   display: flex;
   align-items: center;
@@ -193,13 +193,13 @@ h1.page-title.include-icon::before {
 .topic {
   margin-bottom: -0.25vw;
   text-decoration: underline;
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
   font-size: 2vw;
   font-weight: bold;
 }
 
 .content-title {
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
   text-align: left;
   font-size: 2.5vw;
   color: var(--primary);
@@ -294,7 +294,7 @@ h3 {
   text-align: center;
   font-size: 1vw;
   font-style: italic;
-  font-family: var(--headings) sans-serif;
+  font-family: var(--headings), sans;
   padding-top: -1vw;
   padding-bottom: -1vw;
   margin: 0;
@@ -302,7 +302,7 @@ h3 {
 
 .construction-warning {
   text-align: center;
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
   font-size: 1.5vw;
   font-weight: bold;
   text-decoration: underline;
@@ -369,7 +369,7 @@ h3 {
 }
 
 .example-problem.title {
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
   font-weight: bold;
   font-size: 1.5vw;
   text-decoration: underline;
@@ -396,7 +396,7 @@ h3 {
   font-size: 2vw;
   text-decoration: none;
   color: var(--white);
-  font-family: var(--titles) sans-serif;
+  font-family: var(--titles), sans;
   margin-left: 4vw;
   margin-bottom: 2vw;
 }

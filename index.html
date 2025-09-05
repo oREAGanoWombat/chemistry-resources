@@ -30,7 +30,6 @@
   </script>
   <!--end of Navigation bar-->
   <div class="index-content">
-    <p id="last-modified">This project was last updated Apr. 8, 2025</p>
     <p>Welcome to my chemistry guidebook website! This website houses resources and helpful tools I've accumulated over time.</p>
     <p>To get started, select a discipline at the top and browse the topics and resources available.</p>
     <a class="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSdnXYsqGqUSpygSlu8kWDUxwfWh6fZMLFNzK4NxHUi9qSkRew/viewform?usp=dialog">Provide feedback & suggestions!</a>
@@ -40,7 +39,7 @@
   <div class="updates list" id="updates-div">
     <h3 id="updates-header">Updates</h3>
     <ul>
-      <li><b>Sept. 5, 2025:</b> Added link to Google Form for suggestions and feedback</li>
+      <li><b>Sept. 5, 2025:</b> Added link to Google Form for suggestions and feedback, created master footer.html file</li>
       <li><b>Apr. 8, 2025:</b> Added Bomb Calorimetry and Acid Base Chemistry pages</li>
       <li><b>Apr. 7, 2025:</b> Created js query for laundry list</li>
       <li><b>Mar. 5, 2025:</b> Added "Updates" and "Laundry List" to home page</li>
@@ -74,8 +73,17 @@
 
 </body>
 
-<footer>
-  <script src="/chemistry-resources/docs/js/laundry-list.js"></script>
-</footer>
+<!--Footer-->
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/chemistry-resources/docs/footer.html");
+  });
+
+</script>
+<!--end of Footer-->
 
 </html>
