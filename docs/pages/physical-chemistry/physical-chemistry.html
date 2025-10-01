@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Physical Chemistry</title>
+    <link rel="stylesheet" href="/chemistry-resources/docs/css/style.css">
+    <meta name="description" content="">
+
+    <script src="/chemistry-resources/docs/css/navigation-1.1/tabsets.js"></script>
+
+    <meta name="theme-color" content="#fafafa">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script>
+        // Combined MathJax Configuration
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']], // For inline math with $...$ or \(...\)
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}, // Load mhchem package
+                equationNumbers: {
+                    autoNumber: 'AMS' // Optional: for automatic numbering
+                }
+            },
+            loader: {
+                load: ['[tex]/mhchem'] // Ensure mhchem is loaded
+            },
+            svg: {
+                fontCache: 'global' // Optional: for faster rendering
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+</head>
+
+<body>
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+    $(function(){
+        $("#nav-placeholder").load("/chemistry-resources/docs/navigation.html");
+    });
+
+</script>
+<!--end of Navigation bar-->
+
+<h1 class="page-title">Physical Chemistry</h1>
+<div class="alert">
+    <h1 class="construction-warning">WARNING! This page is under construction!</h1>
+    <p>This page is currently in the process of being made. Links may be dead, figures may be missing, and information may be incomplete.</p>
+    <p class="last-updated">This page was last updated <b>March 19, 2025</b></p>
+</div>
+<div class="content-section main">
+    <div class="topic-div">
+        <p>To view my notes from Physical Chemistry in undergrad, click the button below! These notes focus on the first law of thermodynamics and gas expansion.</p>
+        <a class="button1" href="https://oreaganowombat.github.io/physical-chemistry">Physical Chemistry Guidebook</a>
+    </div>
+    <div class="topic-div" id="expansion-pathway-variables">
+        <table>
+            <tr>
+                <th>Pathway</th>
+                <th>$q$</th>
+                <th>$w$</th>
+                <th>$\Delta U$</th>
+                <th>$\Delta H$</th>
+            </tr>
+            <tr>
+                <td>Isothermal</td>
+                <td>$nRT \ln{\frac{V_2}{V_1}}$</td>
+                <td>$-nRT \ln{\frac{V_2}{V_1}}$</td>
+                <td>$0$</td>
+                <td>$0$</td>
+            </tr>
+            <tr>
+                <td>Isochoric</td>
+                <td>$C_{V}\Delta T$</td>
+                <td>$0$</td>
+                <td>$C_{V}\Delta T$</td>
+                <td>$C_{V}\Delta T + V \Delta P$</td>
+            </tr>
+            <tr>
+                <td>Isobaric</td>
+                <td>$C_{P} \Delta T$</td>
+                <td>$-P \Delta V$</td>
+                <td>$C_{P} \Delta T - P \Delta V$</td>
+                <td>$C_{P} \Delta T$</td>
+            </tr>
+            <tr>
+                <td>Adiabatic</td>
+                <td>$0$</td>
+                <td>$C_{V} \Delta T$</td>
+                <td>$C_{V} \Delta T$</td>
+                <td>$C_{P} \Delta T$</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+
+<!--Footer-->
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/chemistry-resources/docs/footer.html");
+    });
+
+</script>
+<!--end of Footer-->
+
+</html>

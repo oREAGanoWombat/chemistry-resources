@@ -95,6 +95,19 @@ a {
   width: 3vw;
   height: auto;
   max-height: 100%;
+  background-image: url("icons/Icon_Flask_MediumGrey.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.15vw;
+  vertical-align: middle;
+}
+
+.include-icon.physical-chemistry::before {
+  content: "";
+  display: inline-block;
+  width: 3vw;
+  height: auto;
+  max-height: 100%;
   background-image: url("icons/Icon_Atom_MediumGrey.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -403,4 +416,38 @@ h3 {
 
 .no-margin {
   margin: 0;
+}
+
+/* Target the table inside the specific div */
+#expansion-pathway-variables table {
+  /* Styles for the whole table */
+  width: 80%; /* Example setting */
+  margin: 20px auto; /* Center the table */
+  border-collapse: collapse; /* Essential for clean borders */
+}
+
+/* Target table headers */
+#expansion-pathway-variables th {
+  /* Styles for the header cells */
+  background-color: var(--primary); /* A nice green background */
+  color: white; /* White text */
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Target table data cells */
+#expansion-pathway-variables td {
+  /* Styles for the body cells */
+  border: 1px solid #dddddd;
+  padding: 8px 15px;
+}
+
+/* Add a hover effect for rows */
+#expansion-pathway-variables tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Add zebra stripping (alternating row colors) for readability */
+#expansion-pathway-variables tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
